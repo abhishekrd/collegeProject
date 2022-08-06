@@ -7,13 +7,11 @@ const Navigation = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand className="brand" href="#home">
-          JSPMRSCOE
-        </Navbar.Brand>
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="navlink">Guidelines</Nav.Link>
+            <Nav.Link className="navlink" target="_blank" href="./documents/PROJECT_MANUAL.pdf">Guidelines</Nav.Link>
 
             <NavDropdown
               title="Past Year Projects"
@@ -22,19 +20,19 @@ const Navigation = () => {
             >
               <NavDropdown.Item 
               target="_blank"
-              href="./documents/PROJECT_CATEGORIES_19_20.pdf">
+              href="./documents/19-20_Final_Topic _Selected_for Project.pdf">
                 AY - 2019-20
               </NavDropdown.Item>
               
               <NavDropdown.Item 
               target="_blank"
-              href="./documents/PROJECT_CATEGORIES_20_21.pdf">
+              href="./documents/20-2021.pdf">
                 AY - 2020-21
               </NavDropdown.Item>
 
               <NavDropdown.Item
                 target="_blank"
-                href="./documents/ProjectList2021-22.pdf"
+                href="./documents/ProjectListWihTitle_2021_22_Updated (2).pdf"
               >
                 AY - 2021-22
               </NavDropdown.Item>
@@ -59,7 +57,7 @@ const Navigation = () => {
               <NavDropdown.Item href="#action/3.1">
                 PROJECT REVIEW - 2
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">STAGE - I</NavDropdown.Item>
+              <NavDropdown.Item target="_blank" href="./documents/Stage-1_Guidelines.pdf">STAGE - I</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
               title="Sem-2-Task"
@@ -81,7 +79,7 @@ const Navigation = () => {
               <NavDropdown.Item href="#action/3.1">
                 IMPLEMENTATION PAPER PUBLICATION
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">STAGE-2</NavDropdown.Item>
+              <NavDropdown.Item target="_blank" href="./documents/Stage-2_Guidelines.pdf">STAGE-2</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
               title="Document Formats"
@@ -113,7 +111,7 @@ const Navigation = () => {
               <NavDropdown.Item href="#action/3.1">
                 LIST OF UGC-CARE Journals
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
+              <NavDropdown.Item href="./documents/Conference.pdf">
                 LATEST CONFERENCES
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">
@@ -122,7 +120,6 @@ const Navigation = () => {
             </NavDropdown>
 
             <Nav.Link className="navlink">Guides</Nav.Link>
-            <Nav.Link className="navlink">Synopsis</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
