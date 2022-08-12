@@ -1,10 +1,16 @@
 import React from 'react'
+import Institution from './Institution'
+import Navigation from './Navbar'
 
 const Home = () => {
   return (
-    <div className='home-div'>
-        <p> All Project Documents at One Place </p>
+    <div className='App'>
+      <Institution />
+    <Navigation />
+    
     </div>
+    
+    
   )
 }
 

@@ -1,20 +1,23 @@
+import React from 'react'
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from 'react-bootstrap/Button';
-import { Link } from "react-router-dom";
+import Form from 'react-bootstrap/Form';
+import "../App.css"
 
-const Navigation = () => {
+const Upload = () => {
   return (
-    <>
-    <Navbar bg="light" expand="lg" id="navbaaar">
+<>
+<Navbar bg="light" expand="lg" id="navbaaar">
       <Container>
         
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
           <Nav.Link className="navlink" target="_top" href="/">Home</Nav.Link>
+
             <Nav.Link className="navlink" target="_blank" href="./documents/PROJECT_MANUAL.pdf">Guidelines</Nav.Link>
 
             <NavDropdown
@@ -123,22 +126,36 @@ const Navigation = () => {
 
             <Nav.Link className="navlink">Guides</Nav.Link>
 
-   
-   <Link to="/upload"> <Button variant="danger" type="submit" id="uploadbtn">
-      Upload
-    </Button>
-    </Link>
-
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
 
-<div className='home-div'>
-<p> All Project Documents at One Place </p>
-</div>
-</>
-  );
-};
+    <div className='formdivv'>
+    <Form >
+    <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Label>EDI Group ID</Form.Label>
+      <Form.Control type="text" placeholder="Enter your EDI Group No." />
+    </Form.Group>
 
-export default Navigation;
+    <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Label>Group Lead</Form.Label>
+      <Form.Control type="text" placeholder="Enter your Name" />
+    </Form.Group>
+    
+    <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Label>Document</Form.Label>
+      <Form.Control type="text" placeholder="Enter the Name of Document Ex.Project Report" />
+    </Form.Group>
+
+    <Button variant="danger" type="submit">
+      Upload Document
+    </Button>
+  </Form>
+  
+  </div>
+  </>
+  )
+}
+
+export default Upload
