@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "../App.css"
+import FirebaseUpload from './FirebaseUpload';
 
 const Upload = () => {
+
+  const [edi,setEdi] = useState("");
+  const [lead,setLead] = useState("");
+  const [document,setDocument] = useState("");
+
   return (
 <>
 <Navbar bg="light" expand="lg" id="navbaaar">
@@ -135,22 +140,21 @@ const Upload = () => {
     <Form >
     <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>EDI Group ID</Form.Label>
-      <Form.Control type="text" placeholder="Enter your EDI Group No." />
+      <Form.Control value={edi} onChange={(e) => setEdi(e.target.value)} type="text" placeholder="Enter your EDI Group No." />
     </Form.Group>
 
     <Form.Group className="mb-3" controlId="formBasicPassword">
       <Form.Label>Group Lead</Form.Label>
-      <Form.Control type="text" placeholder="Enter your Name" />
+      <Form.Control value={lead} onChange={(e) => setLead(e.target.value)} type="text" placeholder="Enter your Name" />
     </Form.Group>
     
     <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>Document</Form.Label>
-      <Form.Control type="text" placeholder="Enter the Name of Document Ex.Project Report" />
+      <Form.Control value={document} onChange={(e) => setDocument(e.target.value)} type="text" placeholder="Enter the Name of Document Ex.Project Report" />
     </Form.Group>
 
-    <Button variant="danger" type="submit">
-      Upload Document
-    </Button>
+<FirebaseUpload />
+    
   </Form>
   
   </div>
