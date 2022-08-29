@@ -94,7 +94,7 @@ const Navigation = () => {
               <NavDropdown.Item href="#action/3.1">
                 LIST OF UGC-CARE Journals
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/Conference.pdf">
+              <NavDropdown.Item href="./documents/Conference.pdf" target="_blank">
                 LATEST CONFERENCES
               </NavDropdown.Item>
               
@@ -104,34 +104,34 @@ const Navigation = () => {
               className="animate slideIn"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="./documents/Implementation Paper - Shreyash.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/Implementation Paper - Shreyash.pdf">
                 Implementation Paper
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/IJSRET_V8_issue1_182 - Shreyash.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/IJSRET_V8_issue1_182 - Shreyash.pdf">
                 Survey Paper
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/V8I2_263_Author2 - Shreyash.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/V8I2_263_Author2 - Shreyash.pdf">
                 Certificate
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/Group 12 Published paper - Tushar Pangare.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/Group 12 Published paper - Tushar Pangare.pdf">
                 Published Paper
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/Real Time Object Measurement Using Image Processing - Yash Basutkar.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/Real Time Object Measurement Using Image Processing - Yash Basutkar.pdf">
                 Survey Paper-2
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/8738 - Karishma Katkar.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/8738 - Karishma Katkar.pdf">
                 Survey Paper-3
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/PID_29_Certificate - Mayur Patil.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/PID_29_Certificate - Mayur Patil.pdf">
                 Certificate-2
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/118-121, Tesma0701,IJEAST - SANKET TAKALE.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/118-121, Tesma0701,IJEAST - SANKET TAKALE.pdf">
                 Survey Paper-4
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/CamScanner 07-06-2022 12.20.59 - Karishma Katkar.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/CamScanner 07-06-2022 12.20.59 - Karishma Katkar.pdf">
                 Certificate-3
               </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/MSEA - Yash Basutkar.pdf">
+              <NavDropdown.Item target="_blank" href="./documents/MSEA - Yash Basutkar.pdf">
                 Publication
               </NavDropdown.Item>
               
