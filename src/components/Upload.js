@@ -23,19 +23,26 @@ const Upload = () => {
 
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
-  const [progress , setProgress] = useState();
+  
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
   const docref = collection(db,"userdata")
 
+
   const uploadData = async () => {
+
+    if(!edi || !lead || !document){
+      return alert("please enter all the fields")
+    }
     await addDoc(docref,{doctype:document, groupid:edi, grouplead:lead}
      )
 
      await setEdi("");
      await setLead("");
      await setDocument("");
+     
+     await alert("Document Uploaded Successfully!")
   
      if (imageUpload == null) {
        return;
@@ -188,17 +195,17 @@ const Upload = () => {
     <Form >
     <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>EDI Group ID</Form.Label>
-      <Form.Control value={edi} onChange={(e) => setEdi(e.target.value)} type="text" placeholder="Enter your EDI Group No." />
+      <Form.Control required value={edi} onChange={(e) => setEdi(e.target.value)} type="text" placeholder="Enter your EDI Group No." />
     </Form.Group>
 
     <Form.Group className="mb-3" controlId="formBasicPassword">
       <Form.Label>Group Lead</Form.Label>
-      <Form.Control value={lead} onChange={(e) => setLead(e.target.value)} type="text" placeholder="Enter your Name" />
+      <Form.Control required value={lead} onChange={(e) => setLead(e.target.value)} type="text" placeholder="Enter your Name" />
     </Form.Group>
     
     <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>Document</Form.Label>
-      <Form.Control value={document} onChange={(e) => setDocument(e.target.value)} type="text" placeholder="Enter the Name of Document Ex.Project Report" />
+      <Form.Control required value={document} onChange={(e) => setDocument(e.target.value)} type="text" placeholder="Enter the Name of Document Ex.Project Report" />
     </Form.Group>
 
     <div className="App">
