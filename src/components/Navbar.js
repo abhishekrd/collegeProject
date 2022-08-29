@@ -46,21 +46,7 @@ const Navigation = () => {
               className="animate slideIn"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1">
-                GROUP FORMATION DETAILS
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                SYNOPSIS PRESENTATION
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                SUBMISSION OF PROJECT ABSTRACT
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                PROJECT REVIEW - 1
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                PROJECT REVIEW - 2
-              </NavDropdown.Item>
+              
               <NavDropdown.Item target="_blank" href="./documents/Stage-1_Guidelines.pdf">STAGE - I</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
@@ -68,21 +54,7 @@ const Navigation = () => {
               className="animate slideIn"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1">
-                SURVEY PAPER PUBCLICATION
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                MODULE DEVELOPMENT
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                PROJECT REVIEW-3
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                PROJECT REVIEW-4
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">
-                IMPLEMENTATION PAPER PUBLICATION
-              </NavDropdown.Item>
+              
               <NavDropdown.Item target="_blank" href="./documents/Stage-2_Guidelines.pdf">STAGE-2</NavDropdown.Item>
             </NavDropdown>
             
@@ -91,10 +63,8 @@ const Navigation = () => {
               className="animate slideIn"
               id="basic-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1">
-                LIST OF UGC-CARE Journals
-              </NavDropdown.Item>
-              <NavDropdown.Item href="./documents/Conference.pdf" target="_blank">
+              
+              <NavDropdown.Item target="_blank" href="./documents/Conference.pdf">
                 LATEST CONFERENCES
               </NavDropdown.Item>
               
