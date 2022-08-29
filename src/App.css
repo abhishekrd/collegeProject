@@ -118,7 +118,7 @@
     margin:0;
   }
   .home-div{
-    background: brown;
+    background: url("../public/images/tech.jpg");
     height:100vh;
     background-repeat: no-repeat;
     background-size: 100%;
