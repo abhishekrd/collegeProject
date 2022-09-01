@@ -15,7 +15,7 @@ import "../App.css"
 import { firebaseConfig } from "../firebase";
 import { collection,addDoc } from "firebase/firestore"; 
 import { Link } from "react-router-dom"
-import Footer from "./Footer.js";
+import Footer from "./Footer";
 
 const Upload = () => {
 
