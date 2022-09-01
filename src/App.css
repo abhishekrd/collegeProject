@@ -111,7 +111,7 @@
 
 .footer {
 	width: 100%;
-	background: #dc3545;
+	background: #a42c00;
 	display: block;
  }
 
@@ -265,4 +265,8 @@ li i {
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
   }
+}
+
+.width{
+  width: 15rem;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { initializeApp } from "firebase/app";
 import { useEffect, useState } from "react";
 import { storage } from "../firebase";
+import Spinner from 'react-bootstrap/Spinner';
 import { ref, uploadBytes, listAll, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
 import { getFirestore } from "firebase/firestore";
@@ -22,6 +23,8 @@ const Upload = () => {
   const [edi,setEdi] = useState("");
   const [lead,setLead] = useState("");
   const [document,setDocument] = useState("");
+  const [loading, setLoading] = useState(false);
+
 
   const [imageUpload, setImageUpload] = useState(null);
   const [imageList, setImageList] = useState([]);
@@ -33,13 +36,15 @@ const Upload = () => {
 
 
   const uploadData = async () => {
-
+    
     if(!edi || !lead || !document){
       return alert("please enter all the fields")
     }
+
+    setLoading(true)
     await addDoc(docref,{doctype:document, groupid:edi, grouplead:lead}
      )
-
+    await setLoading(false)
      await setEdi("");
      await setLead("");
      await setDocument("");
@@ -186,7 +191,7 @@ const Upload = () => {
       
     </div>
 
-<Button variant="danger" onClick={uploadData}>Upload Document</Button>
+<Button className='width' variant="danger" onClick={uploadData}>{loading ? <Spinner animation="border" variant="light" /> : "Upload Document" }</Button>
 
   </Form>
   
