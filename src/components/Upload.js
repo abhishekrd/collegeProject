@@ -40,6 +40,10 @@ const Upload = () => {
     if(!edi || !lead || !document){
       return alert("please enter all the fields")
     }
+  
+    if(imageUpload === null){
+      return alert("please choose the document to upload")
+    }
 
     setLoading(true)
     await addDoc(docref,{doctype:document, groupid:edi, grouplead:lead}
